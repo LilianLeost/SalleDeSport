@@ -1,4 +1,4 @@
-#Projet Symfony - Salle de Sport
+# Projet Symfony - Salle de Sport
  
  * ## Présentation du projet
  
@@ -6,14 +6,13 @@
  
  * ## Installation
 
-Pour l'installation 
-
-```php
-<?php
-echo("oui")
-?>
 ```
- 
+git clone https://github.com/LilianLeost/SalleDeSport.git
+cd SalleDeSport
+composer update
+symfony serve -d
+```
+
  
  * ## Outils
  
