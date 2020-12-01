@@ -1,0 +1,47 @@
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-weight: initial;
+    color: black;
+
+}
+#contact-form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 800px;
+    height: 350px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+}
+.texttop {
+    text-align: center;
+}
+h2.heading {
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    color: #505050;
+    padding-top: 1em;
+}
+@media (min-width: 450px) {
+    h2.heading {
+        font-size: 3.55em;
+    }
+}
+@media (min-width: 760px) {
+    h2.heading {
+        font-size: 3.05em;
+    }
+}
+@media (min-width: 900px) {
+    h2.heading {
+        font-size: 3.25em;
+        margin: 0 0 0.3em;
+    }
+}

@@ -1,0 +1,13 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Edit Rubriques{% endblock %}
+
+{% block body %}
+    <h1>Edit Rubriques</h1>
+
+    {{ include('rubriques/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('rubriques_index') }}">back to list</a>
+
+    {{ include('rubriques/_delete_form.html.twig') }}
+{% endblock %}

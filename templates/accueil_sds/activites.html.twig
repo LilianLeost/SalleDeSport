@@ -1,0 +1,127 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Activités{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/activites.css") }}">
+{% endblock %}
+
+{% block body %}
+    <div id="scroll_to_top">
+        <a href="#top"><img src="{{ asset('images/icontop.png') }}"/></a>
+    </div>
+
+    <section class="wrapper">
+        <div class="container-fostrap">
+            <div>
+                <img src="{{ asset('images/menu/shark96.png') }}" class="fostrap-logo"/>
+                <h1 class="heading">
+                    Activités
+                </h1>
+            </div>
+            <div class="content">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="#boxe">
+                                    <img src="{{ asset('images/activites/boxe.jpg') }}" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="#boxe"> Cours de Boxe
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Cours de boxe assuré par des professionels
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="#boxe" class="btn btn-link btn-block">
+                                        Voir plus
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="#muscu">
+                                    <img id="imgcul" src="{{ asset('images/activites/muscu.jpg') }}"/>
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="#muscu"> Musculation
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Séance de muscu solo ou collectives
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="#muscu" class="btn btn-link btn-block">
+                                        Voir plus
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                            <div class="card">
+                                <a class="img-card" href="#crossfit">
+                                    <img src="{{ asset('images/activites/crossfit.jpg') }}" />
+                                </a>
+                                <div class="card-content">
+                                    <h4 class="card-title">
+                                        <a href="#crossfit">CrossFit
+                                        </a>
+                                    </h4>
+                                    <p class="">
+                                        Séance de crossfit collectives
+                                    </p>
+                                </div>
+                                <div class="card-read-more">
+                                    <a href="#crossfit" class="btn btn-link btn-block">
+                                        Voir plus
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div id="boxe" style="height: 100vh">
+        <h1 class="heading">
+            Cours de boxe
+        </h1>
+        <p>Paphius quin etiam et Cornelius senatores, ambo venenorum artibus pravis se polluisse confessi, eodem pronuntiante Maximino sunt interfecti. pari sorte etiam procurator monetae extinctus est. Sericum enim et Asbolium supra dictos, quoniam cum hortaretur passim nominare, quos vellent, adiecta religione firmarat, nullum igni vel ferro se puniri iussurum, plumbi validis ictibus interemit. et post hoe flammis Campensem aruspicem dedit, in negotio eius nullo sacramento constrictus.<br>
+
+            Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellenteque a conlimitiis suis ferocissimas gentes, quae mente quadam versabili hostiliter eum saepe incessunt et in nos arma moventem aliquotiens iuvant, Nohodares quidam nomine e numero optimatum, incursare Mesopotamiam quotiens copia dederit ordinatus, explorabat nostra sollicite, si repperisset usquam locum vi subita perrupturus.<br>
+
+            Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
+        </p>
+    </div>
+    <div id="muscu" style="height: 100vh">
+        <h1 class="heading">
+           Musculation
+        </h1>
+        <p>Paphius quin etiam et Cornelius senatores, ambo venenorum artibus pravis se polluisse confessi, eodem pronuntiante Maximino sunt interfecti. pari sorte etiam procurator monetae extinctus est. Sericum enim et Asbolium supra dictos, quoniam cum hortaretur passim nominare, quos vellent, adiecta religione firmarat, nullum igni vel ferro se puniri iussurum, plumbi validis ictibus interemit. et post hoe flammis Campensem aruspicem dedit, in negotio eius nullo sacramento constrictus.<br>
+
+            Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellenteque a conlimitiis suis ferocissimas gentes, quae mente quadam versabili hostiliter eum saepe incessunt et in nos arma moventem aliquotiens iuvant, Nohodares quidam nomine e numero optimatum, incursare Mesopotamiam quotiens copia dederit ordinatus, explorabat nostra sollicite, si repperisset usquam locum vi subita perrupturus.<br>
+
+            Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
+        </p>
+    </div>
+    <div id="crossfit" style="height: 100vh">
+        <h1 class="heading">
+            Crossfit
+        </h1>
+        <p>Paphius quin etiam et Cornelius senatores, ambo venenorum artibus pravis se polluisse confessi, eodem pronuntiante Maximino sunt interfecti. pari sorte etiam procurator monetae extinctus est. Sericum enim et Asbolium supra dictos, quoniam cum hortaretur passim nominare, quos vellent, adiecta religione firmarat, nullum igni vel ferro se puniri iussurum, plumbi validis ictibus interemit. et post hoe flammis Campensem aruspicem dedit, in negotio eius nullo sacramento constrictus.<br>
+
+            Eo adducta re per Isauriam, rege Persarum bellis finitimis inligato repellenteque a conlimitiis suis ferocissimas gentes, quae mente quadam versabili hostiliter eum saepe incessunt et in nos arma moventem aliquotiens iuvant, Nohodares quidam nomine e numero optimatum, incursare Mesopotamiam quotiens copia dederit ordinatus, explorabat nostra sollicite, si repperisset usquam locum vi subita perrupturus.<br>
+
+            Ideoque fertur neminem aliquando ob haec vel similia poenae addictum oblato de more elogio revocari iussisse, quod inexorabiles quoque principes factitarunt. et exitiale hoc vitium, quod in aliis non numquam intepescit, in illo aetatis progressu effervescebat, obstinatum eius propositum accendente adulatorum cohorte.
+        </p>
+    </div>
+
+{% endblock %}

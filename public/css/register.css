@@ -1,0 +1,11 @@
+.formulaireregister
+{
+    margin: 0 auto;
+    width: 400px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+
+    color: #1f1f1f;
+}

@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Articles{% endblock %}
+
+{% block body %}
+    <div class="container">
+    <h1>Articles</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nom article</th>
+                <th>Contenu article</th>
+                <th>Rubrique</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for article in articles %}
+            <tr>
+                <td>{{ article.id }}</td>
+                <td>{{ article.articleName }}</td>
+                <td>{{ article.articleContent }}</td>
+                <td>{{ article.rubriques.libelle }}</td>
+                <td>
+                    <a href="{{ path('article_show', {'id': article.id}) }}">Détails</a><br>
+                    <a href="{{ path('article_edit', {'id': article.id}) }}">Modifier</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('article_new') }}">Nouvel Article</a>
+    </div>
+{% endblock %}

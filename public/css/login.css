@@ -1,0 +1,36 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-weight: initial;
+    color: whitesmoke;
+
+    background :url("https://images.unsplash.com/photo-1574680096145-d05b474e2155?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80");
+    background-size: 220vh;
+}
+
+.formulaire {
+    margin: 0 auto;
+    margin-top: 10em;
+    width: 400px;
+    height: 350px;
+    /* Encadré pour voir les limites du formulaire */
+    padding: 1em;
+    border: 1px solid #CCC;
+    border-radius: 1em;
+    background-color: rgba(255,255,255,0.65);
+
+}
+
+
+h1{
+    text-align: center;
+    font-weight: bold;
+}
+
+
+p {
+    margin-top: 1em;
+    text-align: center;
+}

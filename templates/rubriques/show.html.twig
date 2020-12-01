@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rubriques{% endblock %}
+
+{% block body %}
+    <h1>Rubriques</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ rubrique.id }}</td>
+            </tr>
+            <tr>
+                <th>Libelle</th>
+                <td>{{ rubrique.libelle }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <button type="button" class="btn btn-primary"><a href="{{ path('rubriques_index') }}" style="color: whitesmoke">Retour à la liste des rubriques</a></button>
+
+    <button type="button" class="btn btn-primary"><a href="{{ path('rubriques_edit', {'id': rubrique.id}) }}" style="color: whitesmoke">Modifier</a></button>
+
+    {{ include('rubriques/_delete_form.html.twig') }}
+{% endblock %}

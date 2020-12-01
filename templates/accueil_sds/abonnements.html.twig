@@ -1,0 +1,63 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Abonnements{% endblock %}
+
+{% block titrePage %}{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/abonnements.css") }}">
+{% endblock %}
+{% block body %}
+    <center><h1 class="heading">Abonnements</h1></center>
+    <section class="pricing py-5">
+        <div class="container">
+            <div class="row">
+                <!-- Free Tier -->
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Offre Classique</h5>
+                            <h6 class="card-price text-center">28.95€<span class="period">/mois</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Frais d'inscription : 49 €</strong></li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Engagement : 12 mois</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Plus Tier -->
+                <div class="col-lg-4">
+                    <div class="card mb-5 mb-lg-0">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Offre sans engagement</h5>
+                            <h6 class="card-price text-center">33.95€<span class="period">/mois</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Frais d'inscription : 49 €</strong></li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Sans engagement</li>
+
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Pro Tier -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title text-muted text-uppercase text-center">Offre Étudiant</h5>
+                            <h6 class="card-price text-center">19.95€<span class="period">/mois</span></h6>
+                            <hr>
+                            <ul class="fa-ul">
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span><strong>Frais d'inscription : 49 €</strong></li>
+                                <li><span class="fa-li"><i class="fas fa-check"></i></span>Engagement : 12 mois</li>
+                            </ul>
+                            <a href="#" class="btn btn-block btn-primary text-uppercase">Voir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock %}

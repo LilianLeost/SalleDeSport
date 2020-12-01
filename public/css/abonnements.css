@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,100,900);
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-weight: initial;
+    color: black;
+
+}
+h1.heading {
+    color: #fff;
+    font-size: 1.15em;
+    font-weight: 900;
+    margin: 0 0 0.5em;
+    color: #505050;
+    padding-top: 1em;
+
+}
+@media (min-width: 450px) {
+    h1.heading {
+        font-size: 3.55em;
+    }
+}
+@media (min-width: 760px) {
+    h1.heading {
+        font-size: 3.05em;
+    }
+}
+@media (min-width: 900px) {
+    h1.heading {
+        font-size: 3.25em;
+        margin: 0 0 0.3em;
+    }
+}

@@ -1,0 +1,79 @@
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/menu.css") }}">
+
+{% endblock %}
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+
+    <img width="46px" src="{{ asset('images/menu/finshark.png') }}">
+    <a class="navbar-brand" href="{{ path('accueilsds') }}">SharkFit</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li>
+                <a class="nav-link" href="{{ path("activites") }}">Activités</a>
+            </li>
+            <li>
+                <a class="nav-link" href="{{ path("abonnements") }}">Abonnements</a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path("contact") }}">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="{{ path("rubriques") }}">Rubriques</a>
+            </li>
+
+            {#<li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Rubriques
+                </a>
+                {{ dump(is_test) }}#}
+                {#{% for rubrique in rubriques %}
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">{{ rubrique.libelle }}</a>
+                </div>
+                {% endfor %}#}
+
+
+            {% if is_granted('ROLE_ADMIN') %}
+            <li class=>
+                <a class="nav-link navbar-right" href="{{ path("user_index") }}">Utilisateurs</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link navbar-right" href="{{ path("rubriques_index") }}">Rubriques</a>
+            </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="{{ path("article_index") }}">Articles</a>
+                </li>
+
+            {% elseif is_granted('ROLE_REDACTOR') %}
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="{{ path("rubriques_index") }}">Rubriques</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="{{ path("article_index") }}">Articles</a>
+                </li>
+            {% endif %}
+        </ul>
+        <ul class="navbar-nav ml-auto">
+            {% if is_granted('IS_AUTHENTICATED_FULLY') %}
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="{{ path("app_logout") }}">Déconnexion</a>
+                </li>
+            {% else %}
+                <li class="nav-item">
+                    <a class="nav-link navbar-right" href="{{ path("app_login") }}">Se Connecter</a>
+                </li>
+            {% endif %}
+
+
+
+        </ul>
+    </div>
+</nav>

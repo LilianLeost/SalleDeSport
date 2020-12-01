@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Rubriques{% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/abonnements.css") }}">
+{% endblock %}
+{% block body %}
+
+    <div class="container">
+        <center><h1 class="heading">Rubriques</h1></center>
+            <div class="row">
+                        {% for rubrique in rubriques %}
+                            <div class="col-xs-12 col-sm-4">
+                                <div class="card mb-5 mb-lg-0">
+                                        <a href="#"><div class="card text-white bg-dark">
+                                                <center><img src="{{ asset('images/icon_rubriques.png') }}" style="width: 96px" /></center>
+                                            <div class="card-body">
+                                            <center><H4>{{ rubrique.libelle }}</H4></center>
+                                            </div>
+                                        </div></a>
+                                </div>
+                            </div>
+                        {% endfor %}
+            </div>
+    </div>
+{% endblock %}
