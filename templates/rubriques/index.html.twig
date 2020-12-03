@@ -15,7 +15,6 @@
     <table class="table">
         <thead>
             <tr>
-                <th>Id</th>
                 <th>Libelle</th>
                 <th>Actions</th>
             </tr>
@@ -23,7 +22,6 @@
         <tbody>
         {% for rubrique in rubriques %}
             <tr>
-                <td>{{ rubrique.id }}</td>
                 <td>{{ rubrique.libelle }}</td>
                 <td>
                     <a href="{{ path('rubriques_show', {'id': rubrique.id}) }}">Détails</a><br>

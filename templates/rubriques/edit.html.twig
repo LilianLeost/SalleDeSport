@@ -3,11 +3,11 @@
 {% block title %}Edit Rubriques{% endblock %}
 
 {% block body %}
-    <h1>Edit Rubriques</h1>
+    <h1>Modifier Rubrique</h1>
 
     {{ include('rubriques/_form.html.twig', {'button_label': 'Update'}) }}
 
-    <a href="{{ path('rubriques_index') }}">back to list</a>
+    <button type="button" class="btn btn-primary"><a href="{{ path('rubriques_index') }}" style="color: whitesmoke">Retour</a></button>
 
     {{ include('rubriques/_delete_form.html.twig') }}
 {% endblock %}
