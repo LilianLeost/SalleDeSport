@@ -39,6 +39,7 @@ class RegistrationFormType extends AbstractType
                     ]),
                 ],
             ])
+            ->add('newsletter',CheckboxType::class)
             ->add('save',SubmitType::class)
         ;
     }

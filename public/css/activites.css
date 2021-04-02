@@ -9,6 +9,7 @@ body {
     background: #FFF;
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
+    text-align: justify;
 
 }
 
@@ -130,8 +131,8 @@ h1.heading {
  #boxe p {
      font-size: 1.5em;
      color: whitesmoke;
-     text-align: center;
-     font-weight: bold;
+     text-align: justify;
+     margin: 0 100px;
  }
 
 
@@ -153,8 +154,8 @@ h1.heading {
 #muscu p {
     font-size: 1.5em;
     color: black;
-    text-align: center;
-    font-weight: bold;
+    text-align: justify;
+    margin: 0 100px;
 }
 
 
@@ -177,8 +178,8 @@ h1.heading {
 #crossfit p {
     font-size: 1.5em;
     color: whitesmoke;
-    text-align: center;
-    font-weight: bold;
+    text-align: justify;
+    margin: 0 100px;
 }
 
 

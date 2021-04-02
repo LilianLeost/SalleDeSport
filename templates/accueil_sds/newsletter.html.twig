@@ -1,0 +1,27 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Newsletter{% endblock %}
+{% block stylesheets %}
+
+    <link rel="stylesheet" href="{{ asset("css/moncompte.css") }}">
+{% endblock %}
+{% block body %}
+
+    <div class="container">
+    <h1>Inscrits à la Newsletter</h1>
+    <table class="table">
+        <thead>
+        <tr>
+            <th>Mail</th>
+        </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                {% if user.newsletter == 1 %}
+                    <tr><td>{{ user.email }}</td></tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+    <div>
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Mon compte{% endblock %}
+
+{% block titrePage %} {% endblock %}
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset("css/moncompte.css") }}">
+{% endblock %}
+{% block body %}
+
+<div class="container">
+    <h1>Mes informations</h1>
+    
+    <img class="imgUser" src="{{ asset('images/shark.svg') }}">
+    <ul>
+        <li>Nom: {{ app.user.nom }}</li>
+        <li>Prénom: {{ app.user.prenom }}</li>
+        <li>Mail: {{ app.user.email }}</li>
+        <li>Newsletter:
+            {% if app.user.newsletter == 1 %}
+                Inscrit
+            {% else %}
+                Non Inscrit
+            {% endif %}
+        </li>
+        <ul>Rôles :
+            {% for role in app.user.roles %}
+            <li>{{ role }}</li>
+            {% endfor %}
+        </ul>
+
+    </ul>
+    <a href="{{ path('compte_edit', {'id': app.user.id}) }}">Modifier</a>
+
+</div>
+{% endblock %}

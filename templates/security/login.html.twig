@@ -21,12 +21,11 @@
     <h1>Connectez vous</h1>
     <label for="inputEmail">Email</label>
     <input type="email" value="{{ last_username }}" name="email" id="inputEmail" class="form-control" required autofocus>
-    <label for="inputPassword">Password</label>
+    <label for="inputPassword">Mot de passe</label>
     <input type="password" name="password" id="inputPassword" class="form-control" required>
 
     <input type="hidden" name="_csrf_token"
-           value="{{ csrf_token('authenticate') }}"
-    >
+           value="{{ csrf_token('authenticate') }}">
     <div>
         <p>Pas encore inscrit ? <a href="{{ path("app_register") }}">Inscrivez vous ici !</a></p>
     </div>
@@ -42,7 +41,7 @@
     #}
 
     <center><button class="btn btn-lg btn-primary" type="submit">
-        Sign in
+        Connexion
     </button></center>
     </div>
 </form>
